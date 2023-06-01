@@ -1,0 +1,219 @@
+body{
+    background-color: snow;
+    display: flex;
+    flex-direction: column;
+}
+/* Entête */
+header {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #3f3f3f;
+    margin: -1em;
+}
+nav {
+    border-left: solid 1px snow;
+    flex: 8;
+}
+.Photo {
+    flex: 1;
+}
+
+header img {
+    width: 5em;
+    height: 5em;
+    border-radius: 3em;
+    margin-top: 1em;
+    margin-left: 3em;
+}
+
+.Presentation {
+    flex: 1;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+nav ul li {
+    flex: 1;
+    list-style: none;
+}
+p {
+    color: snow;
+}
+/* Cadre principale*/
+.divPrincipale {
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadre {
+    flex: 9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10em;
+    margin-left: -1em;
+    margin-right: -1em;
+    background-color: #3f3f3f;
+}
+
+.cadre img {
+    flex: 3;
+    height: 30em;
+    width: 30em;
+    border-radius: 20em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: 2em;
+}
+.cadre ul {
+    flex: 8;
+    list-style: none;
+}
+
+.cadre ul li {
+    color: snow;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: snow;
+}
+/* Slider */
+.slider {
+    width: 80em;
+    margin: 3em auto;
+    position: relative;
+}
+.slider-viewport {
+    width: 80em;
+    height: 40em;
+    overflow: hidden;
+}
+.slider-content {
+    display: grid;
+    grid-auto-flow: row;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+}
+.slider-content img {
+    width: 80em;
+    height: 40em;
+}
+/* Lignes */
+.slider-content .l1 {
+    grid-row: 1;
+    display: grid;
+    grid-auto-flow: column;
+}
+.slider-content .l2 {
+    grid-row: 2;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.slider-content .l3 {
+    grid-row: 3;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+/* Déplacement */
+#img2:target .slider-content {
+    -webkit-transform: translateX(-80em);
+            transform: translateX(-80em);
+}
+#img3:target .slider-content {
+    -webkit-transform: translateX(-160em);
+            transform: translateX(-160em);
+}
+#img4:target .slider-content {
+    -webkit-transform: translateX(-240em);
+            transform: translateX(-240em);
+}
+#img5:target .slider-content {
+    -webkit-transform: translateX(-320em);
+            transform: translateX(-320em);
+}
+#img6:target .slider-content {
+    -webkit-transform: translateY(-40em);
+            transform: translateY(-40em);
+}
+#img7:target .slider-content {
+    -webkit-transform: translate(-80em, -40em);
+            transform: translate(-80em, -40em);
+}
+#img8:target .slider-content {
+    -webkit-transform: translate(-160em, -40em);
+            transform: translate(-160em, -40em);
+}
+#img9:target .slider-content {
+    -webkit-transform: translate(-240em, -40em);
+            transform: translate(-240em, -40em);
+}
+#img10:target .slider-content {
+    -webkit-transform: translate(-320em, -40em);
+            transform: translate(-320em, -40em);
+}
+#img11:target .slider-content {
+    -webkit-transform: translateY(-80em);
+            transform: translateY(-80em);
+}
+#img12:target .slider-content {
+    -webkit-transform: translate(-80em, -80em);
+            transform: translate(-80em, -80em);
+}
+#img13:target .slider-content {
+    -webkit-transform: translate(-160em, -80em);
+            transform: translate(-160em, -80em);
+}
+#img14:target .slider-content {
+    -webkit-transform: translate(-240em, -80em);
+            transform: translate(-240em, -80em);
+}
+#img15:target .slider-content {
+    -webkit-transform: translate(-320em, -80em);
+            transform: translate(-320em, -80em);
+}
+
+/* Slider nav */
+.slider-nav {
+    position: absolute;
+    width: 100%;
+    bottom: -8em;
+    margin-top: 1em;
+    text-align: center;
+}
+.slider-nav .snl2 {
+    margin-top: 0.5em;
+}
+.slider-nav .snl3 {
+    margin-top: 0.5em;
+}
+.slider-nav a {
+    -webkit-box-shadow: 0em 0em 1em 0em #3f3f3f;
+            box-shadow: 0em 0em 1em 0em #3f3f3f;
+    display: inline-block;
+    background-color: slategrey;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 0.3em;
+}
+.slider-nav a:hover {
+    background-color: snow;
+    -webkit-box-shadow: 0em 0em 0em 0em #3f3f3f;
+            box-shadow: 0em 0em 0em 0em #3f3f3f;
+}
