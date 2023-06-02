@@ -42,6 +42,7 @@ nav ul li {
 }
 p {
     color: snow;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 /* Cadre principale*/
 .divPrincipale {
@@ -82,15 +83,18 @@ p {
 
 h1 {
     text-align: center;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 h2 {
     text-align: center;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 a {
     text-decoration: none;
     color: snow;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 /* Slider */
 .slider {
@@ -121,12 +125,6 @@ a {
 }
 .slider-content .l2 {
     grid-row: 2;
-    display: grid;
-    grid-auto-flow: column;
-}
-
-.slider-content .l3 {
-    grid-row: 3;
     display: grid;
     grid-auto-flow: column;
 }
@@ -168,26 +166,6 @@ a {
     -webkit-transform: translate(-320em, -40em);
             transform: translate(-320em, -40em);
 }
-#img11:target .slider-content {
-    -webkit-transform: translateY(-80em);
-            transform: translateY(-80em);
-}
-#img12:target .slider-content {
-    -webkit-transform: translate(-80em, -80em);
-            transform: translate(-80em, -80em);
-}
-#img13:target .slider-content {
-    -webkit-transform: translate(-160em, -80em);
-            transform: translate(-160em, -80em);
-}
-#img14:target .slider-content {
-    -webkit-transform: translate(-240em, -80em);
-            transform: translate(-240em, -80em);
-}
-#img15:target .slider-content {
-    -webkit-transform: translate(-320em, -80em);
-            transform: translate(-320em, -80em);
-}
 
 /* Slider nav */
 .slider-nav {
@@ -198,9 +176,6 @@ a {
     text-align: center;
 }
 .slider-nav .snl2 {
-    margin-top: 0.5em;
-}
-.slider-nav .snl3 {
     margin-top: 0.5em;
 }
 .slider-nav a {
